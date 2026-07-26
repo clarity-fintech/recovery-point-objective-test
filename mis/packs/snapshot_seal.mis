@@ -1,0 +1,168 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: Recovery Point Objective Test · SnapshotSeal
+
+module RecoveryPointObjectiveTestSnapshotSeal {
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant pack_snapshot_seal_bound: pack_bound == true;
+  invariant catalog_backlink: mis_catalog_bound == true;
+
+  invariant snapshot_seal_001: snapshot_seal_001_bound == true;
+  invariant snapshot_seal_002: snapshot_seal_002_bound == true;
+  invariant snapshot_seal_003: snapshot_seal_003_bound == true;
+  invariant snapshot_seal_004: snapshot_seal_004_bound == true;
+  invariant snapshot_seal_005: snapshot_seal_005_bound == true;
+  invariant snapshot_seal_006: snapshot_seal_006_bound == true;
+  invariant snapshot_seal_007: snapshot_seal_007_bound == true;
+  invariant snapshot_seal_008: snapshot_seal_008_bound == true;
+  invariant snapshot_seal_009: snapshot_seal_009_bound == true;
+  invariant snapshot_seal_010: snapshot_seal_010_bound == true;
+  invariant snapshot_seal_011: snapshot_seal_011_bound == true;
+  invariant snapshot_seal_012: snapshot_seal_012_bound == true;
+  invariant snapshot_seal_013: snapshot_seal_013_bound == true;
+  invariant snapshot_seal_014: snapshot_seal_014_bound == true;
+  invariant snapshot_seal_015: snapshot_seal_015_bound == true;
+  invariant snapshot_seal_016: snapshot_seal_016_bound == true;
+  invariant snapshot_seal_017: snapshot_seal_017_bound == true;
+  invariant snapshot_seal_018: snapshot_seal_018_bound == true;
+  invariant snapshot_seal_019: snapshot_seal_019_bound == true;
+  invariant snapshot_seal_020: snapshot_seal_020_bound == true;
+
+  outcome assert_pack(payload: Bytes) {
+    require payload != @0;
+    constraint pack_bound == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_001(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_001_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_002(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_002_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_003(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_003_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_004(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_004_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_005(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_005_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_006(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_006_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_007(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_007_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_008(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_008_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_009(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_009_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_010(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_010_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_011(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_011_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_012(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_012_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_013(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_013_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_014(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_014_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_015(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_015_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_016(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_016_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_017(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_017_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_018(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_018_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_019(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_019_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_snapshot_seal_020(payload: Bytes) {
+    require payload != @0;
+    constraint snapshot_seal_020_bound == true;
+    constraint chain_id == 1202;
+  }
+
+}

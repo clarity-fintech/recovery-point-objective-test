@@ -1,0 +1,174 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: Recovery Point Objective Test · RpoBound
+
+module RecoveryPointObjectiveTestRpoBound {
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant pack_rpo_bound_bound: pack_bound == true;
+  invariant catalog_backlink: mis_catalog_bound == true;
+
+  invariant rpo_bound_081: rpo_bound_081_bound == true;
+  invariant rpo_bound_082: rpo_bound_082_bound == true;
+  invariant rpo_bound_083: rpo_bound_083_bound == true;
+  invariant rpo_bound_084: rpo_bound_084_bound == true;
+  invariant rpo_bound_085: rpo_bound_085_bound == true;
+  invariant rpo_bound_086: rpo_bound_086_bound == true;
+  invariant rpo_bound_087: rpo_bound_087_bound == true;
+  invariant rpo_bound_088: rpo_bound_088_bound == true;
+  invariant rpo_bound_089: rpo_bound_089_bound == true;
+  invariant rpo_bound_090: rpo_bound_090_bound == true;
+  invariant rpo_bound_091: rpo_bound_091_bound == true;
+  invariant rpo_bound_092: rpo_bound_092_bound == true;
+  invariant rpo_bound_093: rpo_bound_093_bound == true;
+  invariant rpo_bound_094: rpo_bound_094_bound == true;
+  invariant rpo_bound_095: rpo_bound_095_bound == true;
+  invariant rpo_bound_096: rpo_bound_096_bound == true;
+  invariant rpo_bound_097: rpo_bound_097_bound == true;
+  invariant rpo_bound_098: rpo_bound_098_bound == true;
+  invariant rpo_bound_099: rpo_bound_099_bound == true;
+  invariant rpo_bound_100: rpo_bound_100_bound == true;
+
+  outcome assert_pack(payload: Bytes) {
+    require payload != @0;
+    constraint pack_bound == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_081(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_081_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_082(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_082_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_083(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_083_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_084(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_084_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_085(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_085_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_086(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_086_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_087(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_087_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_088(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_088_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_089(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_089_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_090(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_090_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_091(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_091_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_092(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_092_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_093(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_093_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_094(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_094_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_095(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_095_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_096(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_096_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_097(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_097_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_098(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_098_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_099(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_099_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_rpo_bound_100(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_100_bound == true;
+    constraint chain_id == 1202;
+  }
+
+
+  outcome assert_rpo_window(payload: Bytes) {
+    require payload != @0;
+    constraint rpo_bound_ok == true;
+    constraint chain_id == 1202;
+  }
+}

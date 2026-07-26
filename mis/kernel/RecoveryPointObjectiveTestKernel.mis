@@ -1,0 +1,49 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: Recovery Point Objective Test Kernel
+
+module RecoveryPointObjectiveTestKernel {
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant extension_mis: source_extension == mis;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant active_kernel_only: active_kernel == misc;
+  invariant no_foreign_kernel: foreign_kernel_active == false;
+  invariant creator_bound: creator == chandler_william_ferguson;
+  invariant domain_bound: domain == recovery_point_objective_test;
+  invariant clrty1_architecture_bound: clrty1_architecture_bound == true;
+  invariant ecosystem_catalog_bound: ecosystem_catalog_bound == true;
+
+  invariant pack_snapshot_seal_flag: pack_snapshot_seal_bound == true;
+  invariant pack_restore_window_flag: pack_restore_window_bound == true;
+  invariant pack_quorum_witness_flag: pack_quorum_witness_bound == true;
+  invariant pack_drill_execute_flag: pack_drill_execute_bound == true;
+  invariant pack_rpo_bound_flag: pack_rpo_bound_bound == true;
+
+  outcome assert_kernel_misc() {
+    constraint compiler_kernel == misc;
+    constraint active_kernel == misc;
+  }
+
+  outcome letter_hash(source: Bytes) {
+    require source != @0;
+    constraint letter_root != @0;
+  }
+
+  outcome pack_dispatch(pack_id: Bytes, payload: Bytes) {
+    require pack_id != @0;
+    require payload != @0;
+    constraint pack_executed == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+    constraint settlement_network == clrty_1;
+  }
+}

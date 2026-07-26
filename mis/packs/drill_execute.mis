@@ -1,0 +1,174 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: Recovery Point Objective Test · DrillExecute
+
+module RecoveryPointObjectiveTestDrillExecute {
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant pack_drill_execute_bound: pack_bound == true;
+  invariant catalog_backlink: mis_catalog_bound == true;
+
+  invariant drill_execute_061: drill_execute_061_bound == true;
+  invariant drill_execute_062: drill_execute_062_bound == true;
+  invariant drill_execute_063: drill_execute_063_bound == true;
+  invariant drill_execute_064: drill_execute_064_bound == true;
+  invariant drill_execute_065: drill_execute_065_bound == true;
+  invariant drill_execute_066: drill_execute_066_bound == true;
+  invariant drill_execute_067: drill_execute_067_bound == true;
+  invariant drill_execute_068: drill_execute_068_bound == true;
+  invariant drill_execute_069: drill_execute_069_bound == true;
+  invariant drill_execute_070: drill_execute_070_bound == true;
+  invariant drill_execute_071: drill_execute_071_bound == true;
+  invariant drill_execute_072: drill_execute_072_bound == true;
+  invariant drill_execute_073: drill_execute_073_bound == true;
+  invariant drill_execute_074: drill_execute_074_bound == true;
+  invariant drill_execute_075: drill_execute_075_bound == true;
+  invariant drill_execute_076: drill_execute_076_bound == true;
+  invariant drill_execute_077: drill_execute_077_bound == true;
+  invariant drill_execute_078: drill_execute_078_bound == true;
+  invariant drill_execute_079: drill_execute_079_bound == true;
+  invariant drill_execute_080: drill_execute_080_bound == true;
+
+  outcome assert_pack(payload: Bytes) {
+    require payload != @0;
+    constraint pack_bound == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_061(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_061_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_062(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_062_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_063(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_063_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_064(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_064_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_065(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_065_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_066(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_066_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_067(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_067_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_068(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_068_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_069(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_069_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_070(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_070_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_071(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_071_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_072(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_072_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_073(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_073_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_074(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_074_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_075(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_075_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_076(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_076_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_077(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_077_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_078(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_078_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_079(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_079_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_drill_execute_080(payload: Bytes) {
+    require payload != @0;
+    constraint drill_execute_080_bound == true;
+    constraint chain_id == 1202;
+  }
+
+
+  outcome run_restore_drill(payload: Bytes) {
+    require payload != @0;
+    constraint drill_executed == true;
+    constraint chain_id == 1202;
+  }
+}

@@ -1,0 +1,50 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: CLRTY-1 E2E bind · recovery-point-objective-test
+
+module RecoveryPointObjectiveTestClrty1E2e {
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant domain_bound: domain == recovery_point_objective_test;
+  invariant mesh_route_bound: mesh_route == route_recovery_point_objective_test;
+  invariant github_repo_bound: github_repo_bound == true;
+
+  outcome cmd_connect_network(payload: Bytes) {
+    require payload != @0;
+    constraint cmd_connect_network_ok == true;
+    constraint network_connected == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome cmd_rpc_ping(payload: Bytes) {
+    require payload != @0;
+    constraint cmd_rpc_ping_ok == true;
+    constraint rpc_gateway_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome cmd_settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint cmd_settle_clrty1_ok == true;
+    constraint settlement_network == clrty_1;
+    constraint chain_id == 1202;
+  }
+
+  outcome route_mesh(payload: Bytes) {
+    require payload != @0;
+    constraint repo_routed == true;
+    constraint mesh_route_bound == true;
+  }
+
+  outcome run_e2e(catalog: Bytes) {
+    require catalog != @0;
+    constraint integration_e2e_ok == true;
+    constraint chain_id == 1202;
+  }
+}
